@@ -26,8 +26,10 @@ const EventList = () => {
           <div key={event._id} className="event-card">
             <Link to={`/event/${event._id}`} className="event-card-link">
               <h3 className="event-card-title">{event.title}</h3>
-              <p className="event-card-description">{event.description}</p>
-              <p className="event-card-date">{new Date(event.date).toLocaleDateString()}</p>
+              <p className="event-description">{event.description}</p>
+              <p className="event-date">Date: {new Date(event.date).toLocaleDateString()}</p>
+              <p className="event-location">Location: {event.location}</p>
+              <p className="event-organizer">Organizer: {event.organizer}</p>
             </Link>
           </div>
         ))}

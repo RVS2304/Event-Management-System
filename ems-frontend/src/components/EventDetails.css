@@ -43,3 +43,9 @@
 .rsvp-button:hover {
   background-color: var(--secondary-red);
 }
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+

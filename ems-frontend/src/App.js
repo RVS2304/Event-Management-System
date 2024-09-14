@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import CreateEvent from './pages/CreateEvent';
 import Login from './components/Login';
 import EventPage from './pages/Eventpage';
 import EventList from './components/EventList';
 import Signup from './components/Signup';
 import OrganizerDashboard from './components/OrganizerDashboard';
+import AttendeesPage from './components/AttendeesPage';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/organizer-dashboard" element={<OrganizerDashboard />} />
-        <Route path="/create-event" element={<CreateEvent />} />
+        <Route path="/attendees/:id" element={<AttendeesPage />} />
         <Route path="/event/:id" element={<EventPage />} />
         <Route path="/events/" element={<EventList />} />
       </Routes>

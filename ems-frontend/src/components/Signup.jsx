@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import './Signup.css'; // Import the CSS file for styling
+import './Signup.css';
 
 const Signup = () => {
   const [credentials, setCredentials] = useState({ name: '', email: '', password: '', role: '' });
@@ -15,7 +15,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:5000/api/users/register', credentials);
-      // localStorage.setItem('token', response.data.token);
+      localStorage.setItem('token', response.data.token);
 
       if (credentials.role === "ORGANIZER") {
         navigate('/organizer-dashboard');
@@ -25,7 +25,7 @@ const Signup = () => {
       console.log(response.data);
     } catch (error) {
       console.error(error);
-      alert('Signup failed'); // You might want to show more details
+      alert('Signup failed');
     }
   };
 

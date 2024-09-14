@@ -1,10 +1,10 @@
 :root {
-  --primary-orange: #FFA500;
-  --secondary-orange: #FF8C00;
+  --primary-orange: #f9bb48;
+  --secondary-orange: #fec989;
   --primary-red: #D32F2F;
   --secondary-red: #C62828;
-  --background-color: #F5F5F5; /* Light gray background for contrast */
-  --text-color: #333; /* Dark text color for readability */
+  --background-color: #F5F5F5;
+  --text-color: #333;
 }
 
 body {
@@ -21,7 +21,7 @@ h1 {
 
 .navbar {
   background-color: var(--primary-orange);
-  color: #fff; /* White text for contrast */
+  color: #fff;
   padding: 10px 0;
 }
 

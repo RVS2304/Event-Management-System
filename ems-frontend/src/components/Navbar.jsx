@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="nav-links">
         <Link to="/">Home</Link>
-        <Link to="/create-event">Create Event</Link>
+        <Link to="/signup">Create Event</Link>
       </div>
       <div className="nav-buttons">
         <button onClick={handleLogIn}>Login</button>
