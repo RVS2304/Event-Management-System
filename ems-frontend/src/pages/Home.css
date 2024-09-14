@@ -1,0 +1,22 @@
+.home-container {
+    text-align: center;
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+.navbar {
+    background-color: var(--primary-orange);
+    padding: 10px;
+}
+
+.event-list {
+    background-color: #fff;
+    border: 1px solid var(--secondary-orange);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}

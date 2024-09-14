@@ -1,0 +1,47 @@
+:root {
+  --primary-orange: #FFA500;
+  --secondary-orange: #FF8C00;
+  --primary-red: #D32F2F;
+  --secondary-red: #C62828;
+  --background-color: #F5F5F5; /* Light gray background for contrast */
+  --text-color: #333; /* Dark text color for readability */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--primary-red);
+}
+
+.navbar {
+  background-color: var(--primary-orange);
+  color: #fff; /* White text for contrast */
+  padding: 10px 0;
+}
+
+.event-list {
+  background-color: #fff;
+  border: 1px solid var(--secondary-orange);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+button {
+  background-color: var(--primary-red);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-red);
+}
